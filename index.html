@@ -4,50 +4,108 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<title>Rodrigo Galeano Segovia</title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilosGenerales.css">
+	<link rel="stylesheet" href="css/barraNavegacion.css">
+	<link rel="stylesheet" href="css/contenido.css">
 </head>
 <body>
 
-	<header>
-		<a href="#">Rodrigo Galeano Segovia</a>
-		<nav>
+	<header class="barra-navegacion">
+		<nav class="links-navegacion">
+			<a href="#" class="inicio">Rodrigo Galeano Segovia(Menu de inicio, PONER IMAGEN)</a>
 			<ul>
+
 				<li>
-					<a href="#">Tecnologías</a>
+					<a href="#proyectos">Proyectos</a>
 				</li>
 
 				<li>
-					<a href="#">Sobre mí</a>
+					<a href="#conocimientos">Conocimientos</a>
 				</li>
 
 				<li>
-					<a href="#">Proyectos</a>
+					<a href="#sobreMi">Sobre mí</a>
+				</li>
+				
+				<li>
+					<a href="#contacto">Contacto</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<main class="contenido">
 		
-		<div>
+		<section class="nombre">
+			<!-- Parte principal -->
 			<h1>Rodrigo Galeano Segovia</h1>
 			<p>Páginas/aplicaciones web como más te gusten(ACA MI SLOGAN XD)</p>
-		</div>
+		</section>
 
-		<section>
+		<section id="proyectos" class="seccion-proyectos">
+			<h2>Proyectos</h2>
+
+			<div class="proyectos">
+				<div href="#" class="proyecto1">
+					<img src="https://www.lorempixel.com/400/200/" alt="Imagen de un proyecto">
+					<h3>Proyecto N°1</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut accusamus dicta commodi sequi. Iste architecto, sequi recusandae omnis quisquam eius voluptate quibusdam? Veniam sint incidunt totam quod mollitia repudiandae ducimus.</p>
+					<a href="#"><img src="" alt=""></a>
+				</div>
+				
+				<div href="#" class="proyecto2">
+					<img src="https://www.lorempixel.com/400/200/" alt="Imagen de un proyecto">
+					<h3>Proyecto N°2</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, porro assumenda veniam quisquam placeat iure qui, possimus facilis, ullam nobis ut debitis perferendis officia reiciendis quod est rerum natus quam!</p>
+				</div>
+	
+				<div href="#" class="proyecto3">
+
+					<img src="https://www.lorempixel.com/400/200/" alt="Imagen de un proyecto">
+					<h3>Proyecto N°3</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias ut eos nesciunt quidem fugiat magni. Ipsum commodi provident omnis neque totam consequuntur quis optio, odit, eos placeat consectetur doloremque!</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="conocimientos" class="seccion-conocimientos">
 			
-			<h2>Tecnologías que manejo</h2>
-			<ul>
+			<h2>Conocimientos</h2>
+			<div>
 				
-			</ul>
-			<ul>
-				
-			</ul>
+				<div>
+					<h2>Front end</h2>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Javascript</li>
+						<li>SASS</li>
+
+					</ul>
+
+				</div>
+
+				<div>
+					<h2>Back end</h2>
+					<ul>
+						<li>PHP</li>
+						<li>MySQL</li>
+					</ul>
+				</div>
+
+				<div>
+					<h2>Frameworks</h2>
+					<ul>
+						<li>Laravel</li>
+					</ul>
+				</div>
+
+			</div>
 
 		</section>
 
-		<section>
-			
+		<section id="sobreMi" class="sobre-mi">
+			<!-- Sobre mi -->
 			<h2>Sobre mí</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -58,22 +116,15 @@
 
 		</section>
 
-		<section>
-			<h2>Proyectos</h2>
+		
 
-			<a href="#">
-				<h3>Proyecto N°1</h3>
-			</a>
+		<section id="contacto" class="contacto">
+			
+			<h2>Contacto</h2>
+			<p>E-mail: </p>
 
-			<a href="#">
-				<h3>Proyecto N°2</h3>
-			</a>
-
-			<a href="#">
-				<h3>Proyecto N°3</h3>
-			</a>
 		</section>
-
+		
 	</main>
 
 	<footer>
