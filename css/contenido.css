@@ -1,10 +1,18 @@
+.fuente-grande {
+  font-size: 50px;
+  text-align: center;
+}
+
 .contenido {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+  grid-template-rows: 100vh 100vh 100vh 100vh 60vh;
+}
+.contenido .seccion-proyectos, .contenido .seccion-conocimientos, .contenido .sobre-mi {
+  padding: 60px;
 }
 .contenido .nombre {
-  background: url("https://www.hola.com/imagenes/estar-bien/20190820147813/razas-perros-pequenos-parecen-grandes/0-711-550/razas-perro-pequenos-grandes-m.jpg");
+  background: url("../img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,55 +24,172 @@
   align-items: center;
 }
 .contenido .seccion-proyectos {
-  border: 1px red solid;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px;
-}
-.contenido .seccion-proyectos h2 {
-  text-align: center;
   border: 1px red solid;
+  flex-direction: column;
 }
 .contenido .seccion-proyectos .proyectos {
   border: 1px red solid;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   justify-content: space-around;
+  grid-gap: 15px 0px;
   flex-wrap: wrap;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 {
+  border-radius: 10px;
+  margin: 10px 0;
   border: 1px red solid;
   width: 500px;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 img {
-  border: 1px red solid;
   display: flex;
+  border-radius: 10px 10px 0 0;
   width: 100%;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 h3 {
   text-align: center;
 }
+.contenido .seccion-proyectos .proyectos .proyecto1 .links {
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-around;
+}
+.contenido .seccion-proyectos .proyectos .proyecto1 .links a {
+  border: 1px red solid;
+  font-size: 20px;
+}
 .contenido .seccion-proyectos .proyectos .proyecto2 {
+  border-radius: 10px;
+  margin: 10px 0;
   border: 1px red solid;
   width: 500px;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 img {
-  border: 1px red solid;
   display: flex;
+  border-radius: 10px 10px 0 0;
   width: 100%;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 h3 {
   text-align: center;
 }
+.contenido .seccion-proyectos .proyectos .proyecto2 .links {
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-around;
+}
+.contenido .seccion-proyectos .proyectos .proyecto2 .links a {
+  border: 1px red solid;
+  font-size: 20px;
+}
 .contenido .seccion-proyectos .proyectos .proyecto3 {
+  border-radius: 10px;
+  margin: 10px 0;
   border: 1px red solid;
   width: 500px;
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 img {
-  border: 1px red solid;
   display: flex;
+  border-radius: 10px 10px 0 0;
   width: 100%;
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 h3 {
   text-align: center;
+}
+.contenido .seccion-proyectos .proyectos .proyecto3 .links {
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-around;
+}
+.contenido .seccion-proyectos .proyectos .proyecto3 .links a {
+  border: 1px red solid;
+  font-size: 20px;
+}
+.contenido .seccion-proyectos .proyectos .proyecto4 {
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px red solid;
+  width: 500px;
+}
+.contenido .seccion-proyectos .proyectos .proyecto4 img {
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.contenido .seccion-proyectos .proyectos .proyecto4 h3 {
+  text-align: center;
+}
+.contenido .seccion-proyectos .proyectos .proyecto4 .links {
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-around;
+}
+.contenido .seccion-proyectos .proyectos .proyecto4 .links a {
+  border: 1px red solid;
+  font-size: 20px;
+}
+.contenido .seccion-conocimientos {
+  border: 1px blue solid;
+}
+.contenido .seccion-conocimientos .tecnologias {
+  border: 1px red solid;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 40px;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend, .contenido .seccion-conocimientos .tecnologias .backend, .contenido .seccion-conocimientos .tecnologias .otros {
+  border: 1px red solid;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend h2, .contenido .seccion-conocimientos .tecnologias .backend h2, .contenido .seccion-conocimientos .tecnologias .otros h2 {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul, .contenido .seccion-conocimientos .tecnologias .backend ul, .contenido .seccion-conocimientos .tecnologias .otros ul {
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li, .contenido .seccion-conocimientos .tecnologias .backend ul li, .contenido .seccion-conocimientos .tecnologias .otros ul li {
+  font-size: 30px;
+  margin: 20px 0;
+  border: 1px red solid;
+  display: flex;
+  align-items: center;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fab, .contenido .seccion-conocimientos .tecnologias .backend ul li .fab, .contenido .seccion-conocimientos .tecnologias .otros ul li .fab {
+  font-size: 60px;
+  margin-right: 15px;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li img, .contenido .seccion-conocimientos .tecnologias .backend ul li img, .contenido .seccion-conocimientos .tecnologias .otros ul li img {
+  width: 80px;
+  margin: 15px;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fa-html5, .contenido .seccion-conocimientos .tecnologias .backend ul li .fa-html5, .contenido .seccion-conocimientos .tecnologias .otros ul li .fa-html5 {
+  color: #e34f26;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fa-css3-alt, .contenido .seccion-conocimientos .tecnologias .backend ul li .fa-css3-alt, .contenido .seccion-conocimientos .tecnologias .otros ul li .fa-css3-alt {
+  color: #1572b6;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fa-js, .contenido .seccion-conocimientos .tecnologias .backend ul li .fa-js, .contenido .seccion-conocimientos .tecnologias .otros ul li .fa-js {
+  color: #f7df1e;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fa-sass, .contenido .seccion-conocimientos .tecnologias .backend ul li .fa-sass, .contenido .seccion-conocimientos .tecnologias .otros ul li .fa-sass {
+  color: #CD6799;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fa-laravel, .contenido .seccion-conocimientos .tecnologias .backend ul li .fa-laravel, .contenido .seccion-conocimientos .tecnologias .otros ul li .fa-laravel {
+  color: #fb503b;
+}
+.contenido .seccion-conocimientos .tecnologias .frontend ul li .fa-git-alt, .contenido .seccion-conocimientos .tecnologias .backend ul li .fa-git-alt, .contenido .seccion-conocimientos .tecnologias .otros ul li .fa-git-alt {
+  color: #f34f29;
+}
+.contenido .sobre-mi {
+  border: 1px red solid;
+}
+.contenido .contacto {
+  border: 1px red solid;
 }
