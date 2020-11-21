@@ -25,6 +25,7 @@
 }
 .contenido .seccion-proyectos {
   display: flex;
+  border: 1px red solid;
   flex-direction: column;
   background-color: #f2f2f2;
 }
@@ -34,9 +35,6 @@
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
-  grid-gap: 0px 0px;
-  width: 100%;
-  flex-wrap: wrap;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 {
   border-radius: 5px;
@@ -44,6 +42,7 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
+  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
@@ -116,6 +115,7 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
+  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
@@ -188,6 +188,7 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
+  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
@@ -260,6 +261,7 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
+  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
@@ -391,12 +393,14 @@
 }
 .contenido .contacto {
   border: 1px red solid;
+  background-image: url("../img1.jpg");
 }
 .contenido .contacto .vias-comunicacion {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .contenido .contacto .vias-comunicacion .izquierda {
   display: grid;
@@ -408,7 +412,7 @@
   font-size: 50px;
 }
 .contenido .contacto .vias-comunicacion .izquierda .linkedin {
-  color: blue;
+  color: #0077b5;
   margin-right: 20px;
 }
 .contenido .contacto .vias-comunicacion .derecha {
@@ -423,6 +427,10 @@
   display: flex;
   align-items: center;
   margin: 10px 0;
+  color: #fff;
+}
+.contenido .contacto .vias-comunicacion .derecha p a {
+  color: #fff;
 }
 .contenido .contacto .vias-comunicacion .derecha p i {
   margin-right: 10px;
