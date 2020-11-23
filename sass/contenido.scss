@@ -6,17 +6,18 @@
 .contenido{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100vh auto 100vh 100vh 30vh;
+    grid-template-rows: 100vh auto auto auto 30vh;
     
     .seccion-proyectos, .seccion-conocimientos, .sobre-mi{
         padding: 45px;
+        // width: 100vw;
     }
 
     .nombre{
         
         
         // background: url('https://www.hola.com/imagenes/estar-bien/20190820147813/razas-perros-pequenos-parecen-grandes/0-711-550/razas-perro-pequenos-grandes-m.jpg');
-        background: url('../img1.jpg');
+        background: url('../imagenes/img1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -35,6 +36,7 @@
         border: 1px red solid;
         flex-direction: column;
         background-color: #f2f2f2;
+        // width: 100vw;
         // justify-content: center;
 
         .proyectos{
@@ -55,6 +57,7 @@
                     display: grid;
                     grid-template-columns: 60% 40%;
                     grid-template-rows: 300px;
+                    justify-content: center;
                     border: 1px red solid;
                     width: 1200px;
                     transition: all .2s;
@@ -62,6 +65,8 @@
 
                     .imagen1{
                         background-image: url('../proyectos/Captura proyecto1.JPG');
+                        border: 1px red solid;
+                        
                     }
 
                     .imagen2{
@@ -88,7 +93,7 @@
                         grid-template-rows: auto 50px;
                         .texto{
                             // border: 1px blue solid;
-                            padding: 10px;
+                            padding: 20px;
                             display: grid;
                             grid-template-columns: auto;
                             grid-template-rows: auto auto;
@@ -147,65 +152,71 @@
     .seccion-conocimientos{
         border: 1px blue solid;
         background-color: #e3e3e3;
-
+        
         .tecnologias{
-            border: 1px red solid;
+            // border: 1px red solid;
             display: grid;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto;
-            grid-column-gap: 40px;
+            grid-column-gap: 20px;
+            
             .frontend, .backend, .otros{
                 
-                border: 1px red solid;
-                h2{
-                    font-size: 40px;
-                    text-align: center;
-                    text-decoration: underline;
-                    margin-bottom: 10px;
-                }
-
-                ul{
-                    border: 1px red solid;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    li {
-                        font-size: 30px;
-                        // font-weight: 800;
-                        margin: 20px 0;
-                        border: 1px red solid;
+                // border: 1px red solid;
+                .fondo{
+                    background-color: #ccc;
+                    height: 100%;
+                    h2{
+                        font-size: 40px;
+                        text-align: center;
+                        text-decoration: underline;
+                        margin-bottom: 10px;
+                    }
+    
+                    ul{
+                        // border: 1px #ccc solid;
+                        background-color: #ccc;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
-                        .fab{
-                            font-size: 60px;
-                            margin-right: 15px;
-                        }
-
-                        img{
-                            width: 80px;
-                            margin: 15px;
-                        }
-
-                        .fa-html5{
-                            color: #e34f26;
-                        }
-                        .fa-css3-alt{
-                            color: #1572b6;
-                        }
-                        .fa-js{
-                            color: #f7df1e;
-                        }
-
-                        .fa-sass{
-                            color: #CD6799;
-                        }
-
-                        .fa-laravel{
-                            color: #fb503b;
-                        }
-
-                        .fa-git-alt{
-                            color: #f34f29;
+                        li {
+                            font-size: 30px;
+                            // font-weight: 800;
+                            margin: 20px 0;
+                            // border: 1px red solid;
+                            display: flex;
+                            align-items: center;
+                            .fab{
+                                font-size: 60px;
+                                margin-right: 15px;
+                            }
+    
+                            img{
+                                width: 80px;
+                                margin: 15px;
+                            }
+    
+                            .fa-html5{
+                                color: #e34f26;
+                            }
+                            .fa-css3-alt{
+                                color: #1572b6;
+                            }
+                            .fa-js{
+                                color: #f7df1e;
+                            }
+    
+                            .fa-sass{
+                                color: #CD6799;
+                            }
+    
+                            .fa-laravel{
+                                color: #fb503b;
+                            }
+    
+                            .fa-git-alt{
+                                color: #f34f29;
+                            }
                         }
                     }
                 }
@@ -224,13 +235,16 @@
     .sobre-mi{
         border: 1px red solid;
         background-color: #3e4756;
-
+        .descripcion{
+            padding: 125px;
+            border: 1px red solid;
+        }
 
     }
 
     .contacto{
         border: 1px red solid;
-        background-image: url('../img1.jpg');
+        background-image: url('../imagenes/img1.jpg');
         
         .vias-comunicacion{
             display: grid;

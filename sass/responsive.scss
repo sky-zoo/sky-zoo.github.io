@@ -4,6 +4,7 @@
         
         .seccion-proyectos, .seccion-conocimientos, .sobre-mi{
             padding: 0px;
+            padding-top: 60px;
         }
 
         .seccion-proyectos{
@@ -17,89 +18,18 @@
                         // display: flex;
                         display: grid;
                         grid-template-columns: 60% 40%;
-                        grid-template-rows: 300px;
+                        grid-template-rows: 400px;
                         border: 1px red solid;
-                        width: 1200px;
+                        width: 900px;
                         transition: all .2s;
                         background-color: #3e4756;
-    
-                        .imagen1{
-                            background-image: url('../proyectos/Captura proyecto1.JPG');
-                        }
-    
-                        .imagen2{
-                            background-image: url('../proyectos/Captura proyecto2.JPG');
-                        }
-    
-                        .imagen#{$i}{
-                            // width: 900px;
-                            // height: 100%;
-                            // border: 1px red solid;
-                            border-radius: 5px 0 0 5px;
-                            background-size: cover;
-                            background-position: center;
-                            img{
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 5px 0 0 5px;
-                            }
-                        }
-    
-                        .info{
-                            display: grid;
-                            grid-template-columns: auto;
-                            grid-template-rows: auto 50px;
-                            .texto{
-                                // border: 1px blue solid;
-                                padding: 10px;
-                                display: grid;
-                                grid-template-columns: auto;
-                                grid-template-rows: auto auto;
-                                width: 100%;
-                                h3{
-                                    color: #e3e3e3;
-                                    text-align: center;
-                                    text-decoration: underline;
-                                }
-                                p{
-                                    // border: 1px red solid;
-                                    color: #e3e3e3;
-                                    font-size: 20px;
-                                }
-                            }
-        
-                            .links{
-                                // border: 1px red solid;
-                                display: flex;
-                                transition: all .2s;
-                                padding: 5px;
-                                justify-content: space-around;
-                                a {
-                                    // border: 1px red solid;
-                                    display: flex;
-                                    align-items: center;
-                                    font-size: 20px;
-                                    background-color: #1fa9b5;
-                                    border-radius: 3px;
-                                    padding: 5px;
-                                    color: #e3e3e3;
-                                    transition: all .2s;
-                                }
-        
-                                a:hover{
-                                    transform: scale(1.05);
-                                    transition: all .2s;
-                                    color: #ff6600;
-                                }
-                                // width: 200px;
-                            }
-                        }
+                        
     
                         
                     }
     
                     .proyecto#{$i}:hover{
-                        transform: scale(1.05);
+                        transform: scale(1.02);
                         transition: all .2s;
                     }
                 }
@@ -111,10 +41,110 @@
 
 }
 
-@media screen and (max-width: 1295px){
+@media screen and (max-width: 925px){
+    .contenido{
+
+        .seccion-proyectos, .seccion-conocimientos, .sobre-mi{
+            // padding: 45px;
+            width: 100vw;
+        }
+
+        .seccion-proyectos{
+            .proyectos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @for $i from 1 through 4{
+                    .proyecto#{$i}{
     
+                        border-radius: 5px;
+                        // display: flex;
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: 300px auto;
+                        border: 1px red solid;
+                        width: 90%;
+                        background-color: #3e4756;
+                        
+    
+                        
+                    }
+    
+                    .proyecto#{$i}:hover{
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 1295px){
+@media screen and (max-width: 790px){
+    .contenido{
+        .seccion-proyectos{
+            .proyectos{
+                @for $i from 1 through 4{
+                    .proyecto#{$i}{
     
+                        border-radius: 5px;
+                        // display: flex;
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: 300px auto;
+                        border: 1px red solid;
+                        width: 80%;
+                        margin: 10px;
+                        background-color: #3e4756;
+                        
+    
+                        
+                    }
+    
+                    .proyecto#{$i}:hover{
+                        transform: none;
+                    }
+                }
+            }
+        }
+
+        .seccion-conocimientos{
+            .tecnologias{
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto;
+                grid-gap: 20px 0;
+
+                .frontend, .backend, .otros{
+                    .fondo{
+                        ul{
+                            li{
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+
+                .frontend, .otros{
+                    .fondo{
+                        ul{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            grid-template-rows: auto auto;
+                        }
+                    }
+                }
+
+                .backend{
+                    .fondo{
+                        ul{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            grid-template-rows: auto;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
