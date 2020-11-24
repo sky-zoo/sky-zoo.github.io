@@ -8,7 +8,7 @@
     grid-template-columns: auto;
     grid-template-rows: 100vh auto auto auto 30vh;
     
-    .seccion-proyectos, .seccion-conocimientos, .sobre-mi{
+    .seccion-proyectos, .seccion-conocimientos{
         padding: 45px;
         // width: 100vw;
     }
@@ -33,14 +33,12 @@
     
     .seccion-proyectos{
         display: flex;
-        border: 1px red solid;
+        // border: 1px red solid;
         flex-direction: column;
         background-color: #f2f2f2;
-        // width: 100vw;
-        // justify-content: center;
 
         .proyectos{
-            border: 1px red solid;
+            // border: 1px red solid;
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: auto auto auto auto;
@@ -58,14 +56,14 @@
                     grid-template-columns: 60% 40%;
                     grid-template-rows: 300px;
                     justify-content: center;
-                    border: 1px red solid;
+                    // border: 1px red solid;
                     width: 1200px;
                     transition: all .2s;
                     background-color: #3e4756;
 
                     .imagen1{
                         background-image: url('../proyectos/Captura proyecto1.JPG');
-                        border: 1px red solid;
+                        // border: 1px red solid;
                         
                     }
 
@@ -74,9 +72,6 @@
                     }
 
                     .imagen#{$i}{
-                        // width: 900px;
-                        // height: 100%;
-                        // border: 1px red solid;
                         border-radius: 5px 0 0 5px;
                         background-size: cover;
                         background-position: center;
@@ -154,11 +149,13 @@
         background-color: #e3e3e3;
         
         .tecnologias{
-            // border: 1px red solid;
+            border: 1px red solid;
             display: grid;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto;
-            grid-column-gap: 20px;
+            grid-column-gap: 10px;
+            
+
             
             .frontend, .backend, .otros{
                 
@@ -221,18 +218,14 @@
                     }
                 }
             }
-
-            // .backend{
-            //     border: 1px red solid;
-            // }
-            // .otros{
-            //     border: 1px red solid;
-            // }
         }
 
     }
 
     .sobre-mi{
+        h2{
+            color: #fff;
+        }
         border: 1px red solid;
         background-color: #3e4756;
         .descripcion{
@@ -243,15 +236,18 @@
     }
 
     .contacto{
+        h2{
+            color: #fff;
+        }
         border: 1px red solid;
         background-image: url('../imagenes/img1.jpg');
-        
+        background-position: right;
         .vias-comunicacion{
             display: grid;
             grid-template-columns: auto auto;
             grid-template-rows: auto;
             justify-content: space-around;
-            background-color: rgba(255,255,255, 0.5);
+            background-color: rgba(255,255,255, 0.4);
             
             .izquierda{
                 display: grid;
@@ -268,17 +264,21 @@
                 .linkedin{
                     color: #0077b5;
                     margin-right: 20px;
+                }
 
-                    
+                .github{
+                    color: #000;
                 }
             }
 
             .derecha{
+                // border: 1px blue solid;
                 padding: 10px;
                 display: grid;
                 grid-template-columns: auto;
                 grid-template-rows: auto auto;
                 align-items: center;
+
                 p{
                     font-size: 20px;
                     display: flex;
@@ -288,6 +288,7 @@
 
                     a{
                         color: #fff;
+                        font-size: 22px;
                     }
 
                     i{

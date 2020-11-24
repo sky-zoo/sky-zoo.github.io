@@ -8,7 +8,7 @@
   grid-template-columns: auto;
   grid-template-rows: 100vh auto auto auto 30vh;
 }
-.contenido .seccion-proyectos, .contenido .seccion-conocimientos, .contenido .sobre-mi {
+.contenido .seccion-proyectos, .contenido .seccion-conocimientos {
   padding: 45px;
 }
 .contenido .nombre {
@@ -25,12 +25,10 @@
 }
 .contenido .seccion-proyectos {
   display: flex;
-  border: 1px red solid;
   flex-direction: column;
   background-color: #f2f2f2;
 }
 .contenido .seccion-proyectos .proyectos {
-  border: 1px red solid;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
@@ -43,14 +41,12 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
   justify-content: center;
-  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .imagen1 {
   background-image: url("../proyectos/Captura proyecto1.JPG");
-  border: 1px red solid;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .imagen2 {
   background-image: url("../proyectos/Captura proyecto2.JPG");
@@ -118,14 +114,12 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
   justify-content: center;
-  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 .imagen1 {
   background-image: url("../proyectos/Captura proyecto1.JPG");
-  border: 1px red solid;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 .imagen2 {
   background-image: url("../proyectos/Captura proyecto2.JPG");
@@ -193,14 +187,12 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
   justify-content: center;
-  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .imagen1 {
   background-image: url("../proyectos/Captura proyecto1.JPG");
-  border: 1px red solid;
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .imagen2 {
   background-image: url("../proyectos/Captura proyecto2.JPG");
@@ -268,14 +260,12 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 300px;
   justify-content: center;
-  border: 1px red solid;
   width: 1200px;
   transition: all 0.2s;
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto4 .imagen1 {
   background-image: url("../proyectos/Captura proyecto1.JPG");
-  border: 1px red solid;
 }
 .contenido .seccion-proyectos .proyectos .proyecto4 .imagen2 {
   background-image: url("../proyectos/Captura proyecto2.JPG");
@@ -341,10 +331,11 @@
   background-color: #e3e3e3;
 }
 .contenido .seccion-conocimientos .tecnologias {
+  border: 1px red solid;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-column-gap: 20px;
+  grid-column-gap: 10px;
 }
 .contenido .seccion-conocimientos .tecnologias .frontend .fondo, .contenido .seccion-conocimientos .tecnologias .backend .fondo, .contenido .seccion-conocimientos .tecnologias .otros .fondo {
   background-color: #ccc;
@@ -398,6 +389,9 @@
   border: 1px red solid;
   background-color: #3e4756;
 }
+.contenido .sobre-mi h2 {
+  color: #fff;
+}
 .contenido .sobre-mi .descripcion {
   padding: 125px;
   border: 1px red solid;
@@ -405,13 +399,17 @@
 .contenido .contacto {
   border: 1px red solid;
   background-image: url("../imagenes/img1.jpg");
+  background-position: right;
+}
+.contenido .contacto h2 {
+  color: #fff;
 }
 .contenido .contacto .vias-comunicacion {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .contenido .contacto .vias-comunicacion .izquierda {
   display: grid;
@@ -425,6 +423,9 @@
 .contenido .contacto .vias-comunicacion .izquierda .linkedin {
   color: #0077b5;
   margin-right: 20px;
+}
+.contenido .contacto .vias-comunicacion .izquierda .github {
+  color: #000;
 }
 .contenido .contacto .vias-comunicacion .derecha {
   padding: 10px;
@@ -442,6 +443,7 @@
 }
 .contenido .contacto .vias-comunicacion .derecha p a {
   color: #fff;
+  font-size: 22px;
 }
 .contenido .contacto .vias-comunicacion .derecha p i {
   margin-right: 10px;

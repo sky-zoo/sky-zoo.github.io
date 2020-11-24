@@ -13,18 +13,9 @@
                 @for $i from 1 through 4{
                     .proyecto#{$i}{
     
-                        border-radius: 5px;
-                        margin: 20px 0;
-                        // display: flex;
-                        display: grid;
-                        grid-template-columns: 60% 40%;
                         grid-template-rows: 400px;
                         border: 1px red solid;
                         width: 900px;
-                        transition: all .2s;
-                        background-color: #3e4756;
-                        
-    
                         
                     }
     
@@ -43,12 +34,6 @@
 
 @media screen and (max-width: 925px){
     .contenido{
-
-        .seccion-proyectos, .seccion-conocimientos, .sobre-mi{
-            // padding: 45px;
-            width: 100vw;
-        }
-
         .seccion-proyectos{
             .proyectos{
                 display: flex;
@@ -57,15 +42,11 @@
                 @for $i from 1 through 4{
                     .proyecto#{$i}{
     
-                        border-radius: 5px;
-                        // display: flex;
-                        display: grid;
+                        
                         grid-template-columns: auto;
                         grid-template-rows: 300px auto;
                         border: 1px red solid;
                         width: 90%;
-                        background-color: #3e4756;
-                        
     
                         
                     }
@@ -76,33 +57,50 @@
                 }
             }
         }
+        .contacto{
+            border: 1px red solid;
+
+            .vias-comunicacion{
+                border: 1px red solid;
+
+                .derecha{
+                    // border: 1px red solid;
+                }
+            }
+        }
+
     }
 }
 
 @media screen and (max-width: 790px){
+
+    .barra-navegacion{
+        .links-navegacion{
+            ul{
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                flex-direction: column;
+                background-color: rgba(0,0,0, 0.3);
+            }
+        }
+    }
+
     .contenido{
         .seccion-proyectos{
             .proyectos{
                 @for $i from 1 through 4{
                     .proyecto#{$i}{
-    
-                        border-radius: 5px;
-                        // display: flex;
-                        display: grid;
-                        grid-template-columns: auto;
-                        grid-template-rows: 300px auto;
                         border: 1px red solid;
                         width: 80%;
                         margin: 10px;
-                        background-color: #3e4756;
-                        
     
                         
                     }
     
-                    .proyecto#{$i}:hover{
-                        transform: none;
-                    }
+                    
                 }
             }
         }
@@ -114,6 +112,7 @@
                 grid-gap: 20px 0;
 
                 .frontend, .backend, .otros{
+                    padding: 10px;
                     .fondo{
                         ul{
                             li{

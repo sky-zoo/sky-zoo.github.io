@@ -3,20 +3,22 @@
     position: fixed;
     z-index: 100;
     height: 45px;
-    width: 100%;
+    width: 100vw;
     background-color: #24292e;
 }
 
 .links-navegacion{
     display: grid;
-    grid-template-columns: 450px auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     width: 100%;
     align-items: center;
     padding: 4px 5px;
+    border: 1px red solid;
 
     .inicio{
-        margin-left: 60px;
+        margin-left: 30px;
+        border: 1px red solid;
     }
 
     a:hover{
@@ -33,13 +35,15 @@
         justify-content: flex-end;
         align-items: center;
         height: 100%;
+        border: 1px red solid;
         
         a:hover{
            color: #ffffff96; 
         }
 
         li{
-            width: 10%;
+            // width: 10%;
+            border: 1px red solid;
             height: 100%;
             display: flex;
             justify-content: center;
