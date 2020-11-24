@@ -90,14 +90,56 @@
   }
 }
 @media screen and (max-width: 790px) {
-  .barra-navegacion .links-navegacion ul {
+  .barra-navegacion .links-navegacion {
+    grid-template-columns: auto auto;
+    display: none;
+  }
+  .barra-navegacion .links-navegacion .menu {
     position: absolute;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     height: 100vh;
-    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: auto;
+    z-index: 1;
+  }
+  .barra-navegacion .links-navegacion .menu .fondo-menu {
+    display: block;
+    border: 1px red solid;
+  }
+  .barra-navegacion .links-navegacion .menu ul {
+    border: 1px red solid;
+    position: relative;
+    top: 0;
+    align-items: stretch;
+    background-color: #24292e;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .barra-navegacion .links-navegacion .menu ul li {
+    width: 100%;
+    height: 50px;
+  }
+  .barra-navegacion .links-navegacion .menu ul li p {
+    font-size: 20px;
+    color: #fff;
+  }
+  .barra-navegacion .links-navegacion .menu ul li:first-child {
+    display: flex;
+  }
+  .barra-navegacion .abrir-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .barra-navegacion .abrir-menu i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 45px;
   }
 
   .contenido .seccion-proyectos .proyectos .proyecto1 {
@@ -141,5 +183,44 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contenido .contacto .vias-comunicacion .derecha {
+    padding: 0;
+    border: 1px red solid;
+  }
+  .contenido .contacto .vias-comunicacion .derecha p {
+    font-size: 18px;
+  }
+  .contenido .contacto .vias-comunicacion .derecha p a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .fuente-grande {
+    font-size: 40px;
+  }
+
+  .contenido .seccion-conocimientos .tecnologias .frontend .fondo ul, .contenido .seccion-conocimientos .tecnologias .otros .fondo ul {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .contenido .seccion-conocimientos .tecnologias .backend .fondo ul {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .contenido .sobre-mi .descripcion {
+    padding: 10px;
+  }
+  .contenido .contacto .vias-comunicacion {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .contenido .contacto .vias-comunicacion .izquierda {
+    justify-content: space-around;
+  }
+  .contenido .contacto .vias-comunicacion .derecha {
+    padding: 5px;
   }
 }

@@ -1,0 +1,11 @@
+class Interfaz{
+
+    abrirMenu(){
+        
+    }
+
+    cerrarMenu(){
+
+    }
+
+}
