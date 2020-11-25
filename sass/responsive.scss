@@ -14,7 +14,7 @@
                     .proyecto#{$i}{
     
                         grid-template-rows: 400px;
-                        border: 1px red solid;
+                        // border: 1px red solid;
                         width: 900px;
                         
                     }
@@ -50,7 +50,7 @@
                         
                         grid-template-columns: auto;
                         grid-template-rows: 300px auto;
-                        border: 1px red solid;
+                        // border: 1px red solid;
                         width: 90%;
     
                         
@@ -63,11 +63,11 @@
             }
         }
         .contacto{
-            border: 1px red solid;
+            // border: 1px red solid;
 
             .fondo-contacto{
                 .vias-comunicacion{
-                    border: 1px red solid;
+                    // border: 1px red solid;
     
                     .derecha{
                         // border: 1px red solid;
@@ -82,66 +82,55 @@
 @media screen and (max-width: 790px){
 
     .barra-navegacion{
-        border: 1px red solid;
-        .inicio{
-            border: 1px red solid;
-        }
+        
+        grid-template-columns: auto 90px;
+        
         .links-navegacion{
-            grid-template-columns: auto auto;
-            // display: none;
-            .menu{
-                position: absolute;
-                // z-index: 90;
-                display: none;
-                top: 45px;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                background-color: rgb(0, 0, 0, 0.3);
-                display: grid;
-                grid-template-columns: auto 200px;
-                grid-template-rows: auto;
-                z-index: -1;
-                .fondo-menu{
-                    display: block;
-                    border: 1px red solid;
-                }
-
-                ul{
-                    border: 1px red solid;
-                    // border: 10px blue solid;
-                    position: relative;
-                    top: 0;
-                    align-items: stretch;
-                    background-color: #24292e;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    // width: 80%;
-                    li{
-                        // align-items: stretch;
-                        width: 100%;
-                        height: 50px;
-                        p{
-                            font-size: 20px;
-                            color: #fff;
-                        }
-                    }
-
-                    li:first-child{
-                        display: flex;
-                    }
-                }
-                &.visible{
-                    border: 1px red solid;
-                    display: block;
-    
-                }
+            padding: 0;
+            position: absolute;
+            top: 0px;
+            left: -1000px;
+            transition: all .2s;
+            height: 100vh;
+            
+            
+            .fondo-menu{
+                display: block;
+                height: 100%;
             }
 
-            &.visible{
-                border: 1px red solid;
-                display: block;
+            ul{
+                // border: 1px red solid;
+                align-items: stretch;
+                background-color: #24292e;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-top: 88px;
+                li{
+                    // border: 1px red solid;
+                    width: 100%;
+                    height: 50px;
+                    p{
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                }
 
+                li:first-child{
+                    display: flex;
+                }
+            }
+            
+
+            &.visible{
+                // border: 1px red solid;
+                display: grid;
+                left: 0;
+                z-index: -1;
+                transition: all .2s;
+                grid-template-columns: auto 200px;
+                grid-template-rows: auto;
+                background-color: rgb(0, 0, 0, 0.3);
             }
             
         }
@@ -150,7 +139,8 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            border: 1px red solid;
+            // border: 1px red solid;
+            // grid-column: 2;
             i{
                 color: #fff;
                 font-size: 30px;
@@ -165,7 +155,7 @@
             .proyectos{
                 @for $i from 1 through 4{
                     .proyecto#{$i}{
-                        border: 1px red solid;
+                        // border: 1px red solid;
                         width: 80%;
                         margin: 10px;
     
@@ -228,7 +218,7 @@
                 .vias-comunicacion{
                     .derecha{
                         padding: 0;
-                        border: 1px red solid;
+                        // border: 1px red solid;
                         p{
                             font-size: 18px;
                             a{
@@ -302,10 +292,9 @@
     }
 }
 
-@media screen and (max-width: 400){
-
-    .contenido{
-
+@media screen and (max-width: 400px){
+    .fuente-grande{
+        font-size: 35px;
     }
 
 }

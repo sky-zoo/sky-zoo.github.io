@@ -32,31 +32,28 @@
 .barra-navegacion .links-navegacion a, .barra-navegacion .links-navegacion .menu ul li a {
   color: #fff;
 }
-.barra-navegacion .links-navegacion .menu .fondo-menu {
+.barra-navegacion .links-navegacion .fondo-menu {
   display: none;
 }
-.barra-navegacion .links-navegacion .menu ul {
+.barra-navegacion .links-navegacion ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
 }
-.barra-navegacion .links-navegacion .menu ul a:hover {
+.barra-navegacion .links-navegacion ul a:hover {
   color: #ffffff96;
 }
-.barra-navegacion .links-navegacion .menu ul li {
+.barra-navegacion .links-navegacion ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 60px;
 }
-.barra-navegacion .links-navegacion .menu ul li a {
+.barra-navegacion .links-navegacion ul li a {
   height: 100%;
   display: flex;
   align-items: center;
-}
-.barra-navegacion .links-navegacion .menu ul li:first-child {
-  display: none;
 }
 .barra-navegacion .abrir-menu {
   display: none;

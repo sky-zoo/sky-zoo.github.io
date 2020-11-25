@@ -384,7 +384,6 @@
   color: #f34f29;
 }
 .contenido .sobre-mi {
-  border: 1px red solid;
   background-color: #3e4756;
   display: flex;
   flex-direction: column;
@@ -396,7 +395,6 @@
 .contenido .sobre-mi .descripcion {
   width: 40%;
   padding: 25px;
-  border: 1px red solid;
 }
 .contenido .sobre-mi .descripcion p {
   color: #fff;

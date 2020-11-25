@@ -5,7 +5,6 @@
   }
   .contenido .seccion-proyectos .proyectos .proyecto1 {
     grid-template-rows: 400px;
-    border: 1px red solid;
     width: 900px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto1:hover {
@@ -14,7 +13,6 @@
   }
   .contenido .seccion-proyectos .proyectos .proyecto2 {
     grid-template-rows: 400px;
-    border: 1px red solid;
     width: 900px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto2:hover {
@@ -23,7 +21,6 @@
   }
   .contenido .seccion-proyectos .proyectos .proyecto3 {
     grid-template-rows: 400px;
-    border: 1px red solid;
     width: 900px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto3:hover {
@@ -32,7 +29,6 @@
   }
   .contenido .seccion-proyectos .proyectos .proyecto4 {
     grid-template-rows: 400px;
-    border: 1px red solid;
     width: 900px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto4:hover {
@@ -52,7 +48,6 @@
   .contenido .seccion-proyectos .proyectos .proyecto1 {
     grid-template-columns: auto;
     grid-template-rows: 300px auto;
-    border: 1px red solid;
     width: 90%;
   }
   .contenido .seccion-proyectos .proyectos .proyecto1:hover {
@@ -61,7 +56,6 @@
   .contenido .seccion-proyectos .proyectos .proyecto2 {
     grid-template-columns: auto;
     grid-template-rows: 300px auto;
-    border: 1px red solid;
     width: 90%;
   }
   .contenido .seccion-proyectos .proyectos .proyecto2:hover {
@@ -70,7 +64,6 @@
   .contenido .seccion-proyectos .proyectos .proyecto3 {
     grid-template-columns: auto;
     grid-template-rows: 300px auto;
-    border: 1px red solid;
     width: 90%;
   }
   .contenido .seccion-proyectos .proyectos .proyecto3:hover {
@@ -79,79 +72,59 @@
   .contenido .seccion-proyectos .proyectos .proyecto4 {
     grid-template-columns: auto;
     grid-template-rows: 300px auto;
-    border: 1px red solid;
     width: 90%;
   }
   .contenido .seccion-proyectos .proyectos .proyecto4:hover {
     transform: none;
   }
-  .contenido .contacto {
-    border: 1px red solid;
-  }
-  .contenido .contacto .fondo-contacto .vias-comunicacion {
-    border: 1px red solid;
-  }
 }
 @media screen and (max-width: 790px) {
   .barra-navegacion {
-    border: 1px red solid;
-  }
-  .barra-navegacion .inicio {
-    border: 1px red solid;
+    grid-template-columns: auto 90px;
   }
   .barra-navegacion .links-navegacion {
-    grid-template-columns: auto auto;
-  }
-  .barra-navegacion .links-navegacion .menu {
+    padding: 0;
     position: absolute;
-    display: none;
-    top: 45px;
-    left: 0;
-    width: 100%;
+    top: 0px;
+    left: -1000px;
+    transition: all 0.2s;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: grid;
-    grid-template-columns: auto 200px;
-    grid-template-rows: auto;
-    z-index: -1;
   }
-  .barra-navegacion .links-navegacion .menu .fondo-menu {
+  .barra-navegacion .links-navegacion .fondo-menu {
     display: block;
-    border: 1px red solid;
+    height: 100%;
   }
-  .barra-navegacion .links-navegacion .menu ul {
-    border: 1px red solid;
-    position: relative;
-    top: 0;
+  .barra-navegacion .links-navegacion ul {
     align-items: stretch;
     background-color: #24292e;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 88px;
   }
-  .barra-navegacion .links-navegacion .menu ul li {
+  .barra-navegacion .links-navegacion ul li {
     width: 100%;
     height: 50px;
   }
-  .barra-navegacion .links-navegacion .menu ul li p {
+  .barra-navegacion .links-navegacion ul li p {
     font-size: 20px;
     color: #fff;
   }
-  .barra-navegacion .links-navegacion .menu ul li:first-child {
+  .barra-navegacion .links-navegacion ul li:first-child {
     display: flex;
   }
-  .barra-navegacion .links-navegacion .menu.visible {
-    border: 1px red solid;
-    display: block;
-  }
   .barra-navegacion .links-navegacion.visible {
-    border: 1px red solid;
-    display: block;
+    display: grid;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s;
+    grid-template-columns: auto 200px;
+    grid-template-rows: auto;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .barra-navegacion .abrir-menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px red solid;
   }
   .barra-navegacion .abrir-menu i {
     color: #fff;
@@ -161,22 +134,18 @@
   }
 
   .contenido .seccion-proyectos .proyectos .proyecto1 {
-    border: 1px red solid;
     width: 80%;
     margin: 10px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto2 {
-    border: 1px red solid;
     width: 80%;
     margin: 10px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto3 {
-    border: 1px red solid;
     width: 80%;
     margin: 10px;
   }
   .contenido .seccion-proyectos .proyectos .proyecto4 {
-    border: 1px red solid;
     width: 80%;
     margin: 10px;
   }
@@ -206,7 +175,6 @@
 @media screen and (max-width: 650px) {
   .contenido .contacto .fondo-contacto .vias-comunicacion .derecha {
     padding: 0;
-    border: 1px red solid;
   }
   .contenido .contacto .fondo-contacto .vias-comunicacion .derecha p {
     font-size: 18px;
@@ -240,5 +208,10 @@
   }
   .contenido .contacto .fondo-contacto .vias-comunicacion .derecha {
     padding: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fuente-grande {
+    font-size: 35px;
   }
 }
