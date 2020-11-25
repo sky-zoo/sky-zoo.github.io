@@ -27,6 +27,11 @@
             }
         }
 
+        .sobre-mi{
+            .descripcion{
+                width: 65%;
+            }
+        }
 
     }
 
@@ -60,11 +65,13 @@
         .contacto{
             border: 1px red solid;
 
-            .vias-comunicacion{
-                border: 1px red solid;
-
-                .derecha{
-                    // border: 1px red solid;
+            .fondo-contacto{
+                .vias-comunicacion{
+                    border: 1px red solid;
+    
+                    .derecha{
+                        // border: 1px red solid;
+                    }
                 }
             }
         }
@@ -75,13 +82,18 @@
 @media screen and (max-width: 790px){
 
     .barra-navegacion{
+        border: 1px red solid;
+        .inicio{
+            border: 1px red solid;
+        }
         .links-navegacion{
             grid-template-columns: auto auto;
-            display: none;
+            // display: none;
             .menu{
                 position: absolute;
-                // display: none;
-                top: 0;
+                // z-index: 90;
+                display: none;
+                top: 45px;
                 left: 0;
                 width: 100%;
                 height: 100vh;
@@ -89,7 +101,7 @@
                 display: grid;
                 grid-template-columns: auto 200px;
                 grid-template-rows: auto;
-                z-index: 1;
+                z-index: -1;
                 .fondo-menu{
                     display: block;
                     border: 1px red solid;
@@ -119,15 +131,26 @@
                         display: flex;
                     }
                 }
+                &.visible{
+                    border: 1px red solid;
+                    display: block;
+    
+                }
             }
 
+            &.visible{
+                border: 1px red solid;
+                display: block;
+
+            }
             
         }
+
         .abrir-menu{
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            // border: 1px red solid;
+            border: 1px red solid;
             i{
                 color: #fff;
                 font-size: 30px;
@@ -201,14 +224,16 @@
     .contenido{
 
         .contacto{
-            .vias-comunicacion{
-                .derecha{
-                    padding: 0;
-                    border: 1px red solid;
-                    p{
-                        font-size: 18px;
-                        a{
+            .fondo-contacto{
+                .vias-comunicacion{
+                    .derecha{
+                        padding: 0;
+                        border: 1px red solid;
+                        p{
                             font-size: 18px;
+                            a{
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
@@ -219,7 +244,6 @@
 }
 
 @media screen and (max-width: 450px){
-    // ACA SE JODE TODO
 
     .fuente-grande{
         font-size: 40px;
@@ -257,20 +281,31 @@
         }
 
         .contacto{
-            .vias-comunicacion{
-                // border: 1px red solid;
-                grid-template-columns: auto;
-                grid-template-rows: auto auto;
-
-                .izquierda{
+            .fondo-contacto{
+                .vias-comunicacion{
                     // border: 1px red solid;
-                    justify-content: space-around;
-                }
-
-                .derecha{
-                    padding: 5px;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto auto;
+    
+                    .izquierda{
+                        // border: 1px red solid;
+                        justify-content: space-around;
+                    }
+    
+                    .derecha{
+                        padding: 5px;
+    
+                    }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width: 400){
+
+    .contenido{
+
+    }
+
 }

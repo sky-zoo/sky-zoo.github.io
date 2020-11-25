@@ -386,65 +386,79 @@
 .contenido .sobre-mi {
   border: 1px red solid;
   background-color: #3e4756;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contenido .sobre-mi h2 {
   color: #fff;
 }
 .contenido .sobre-mi .descripcion {
-  padding: 125px;
+  width: 40%;
+  padding: 25px;
   border: 1px red solid;
+}
+.contenido .sobre-mi .descripcion p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 20px;
 }
 .contenido .contacto {
   background-image: url("../imagenes/img1.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 0;
 }
-.contenido .contacto h2 {
+.contenido .contacto .fondo-contacto {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 0;
+  padding: 0px 0px 30px 0;
+}
+.contenido .contacto .fondo-contacto h2 {
   color: #fff;
 }
-.contenido .contacto .vias-comunicacion {
+.contenido .contacto .fondo-contacto .vias-comunicacion {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
 }
-.contenido .contacto .vias-comunicacion .izquierda {
+.contenido .contacto .fondo-contacto .vias-comunicacion .izquierda {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   align-items: center;
 }
-.contenido .contacto .vias-comunicacion .izquierda .linkedin i, .contenido .contacto .vias-comunicacion .izquierda .github i {
+.contenido .contacto .fondo-contacto .vias-comunicacion .izquierda .linkedin i, .contenido .contacto .fondo-contacto .vias-comunicacion .izquierda .github i {
   font-size: 50px;
 }
-.contenido .contacto .vias-comunicacion .izquierda .linkedin {
+.contenido .contacto .fondo-contacto .vias-comunicacion .izquierda .linkedin {
   color: #0077b5;
   margin-right: 20px;
 }
-.contenido .contacto .vias-comunicacion .izquierda .github {
+.contenido .contacto .fondo-contacto .vias-comunicacion .izquierda .github {
   color: #000;
 }
-.contenido .contacto .vias-comunicacion .derecha {
+.contenido .contacto .fondo-contacto .vias-comunicacion .derecha {
   padding: 10px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   align-items: center;
 }
-.contenido .contacto .vias-comunicacion .derecha p {
+.contenido .contacto .fondo-contacto .vias-comunicacion .derecha p {
   font-size: 20px;
   display: flex;
   align-items: center;
   margin: 10px 0;
   color: #fff;
 }
-.contenido .contacto .vias-comunicacion .derecha p a {
+.contenido .contacto .fondo-contacto .vias-comunicacion .derecha p a {
   color: #fff;
   font-size: 22px;
 }
-.contenido .contacto .vias-comunicacion .derecha p i {
+.contenido .contacto .fondo-contacto .vias-comunicacion .derecha p i {
   margin-right: 10px;
 }
