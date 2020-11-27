@@ -23,6 +23,16 @@
   justify-content: center;
   align-items: center;
 }
+.contenido .nombre .fondo-nombre {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.77);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.contenido .nombre .fondo-nombre p {
+  font-size: 22px;
+}
 .contenido .seccion-proyectos {
   display: flex;
   flex-direction: column;
