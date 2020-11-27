@@ -14,7 +14,6 @@
                     .proyecto#{$i}{
     
                         grid-template-rows: 400px;
-                        // border: 1px red solid;
                         width: 900px;
                         
                     }
@@ -50,7 +49,7 @@
                         
                         grid-template-columns: auto;
                         grid-template-rows: 300px auto;
-                        // border: 1px red solid;
+                        
                         width: 90%;
     
                         
@@ -58,19 +57,6 @@
     
                     .proyecto#{$i}:hover{
                         transform: none;
-                    }
-                }
-            }
-        }
-        .contacto{
-            // border: 1px red solid;
-
-            .fondo-contacto{
-                .vias-comunicacion{
-                    // border: 1px red solid;
-    
-                    .derecha{
-                        // border: 1px red solid;
                     }
                 }
             }
@@ -100,14 +86,12 @@
             }
 
             ul{
-                // border: 1px red solid;
                 align-items: stretch;
                 background-color: #24292e;
                 flex-direction: column;
                 justify-content: flex-start;
                 margin-top: 88px;
                 li{
-                    // border: 1px red solid;
                     width: 100%;
                     height: 50px;
                     p{
@@ -123,7 +107,6 @@
             
 
             &.visible{
-                // border: 1px red solid;
                 display: grid;
                 left: 0;
                 z-index: -1;
@@ -139,8 +122,6 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            // border: 1px red solid;
-            // grid-column: 2;
             i{
                 color: #fff;
                 font-size: 30px;
@@ -155,7 +136,6 @@
             .proyectos{
                 @for $i from 1 through 4{
                     .proyecto#{$i}{
-                        // border: 1px red solid;
                         width: 80%;
                         margin: 10px;
     
@@ -218,7 +198,6 @@
                 .vias-comunicacion{
                     .derecha{
                         padding: 0;
-                        // border: 1px red solid;
                         p{
                             font-size: 18px;
                             a{
@@ -273,12 +252,10 @@
         .contacto{
             .fondo-contacto{
                 .vias-comunicacion{
-                    // border: 1px red solid;
                     grid-template-columns: auto;
                     grid-template-rows: auto auto;
     
                     .izquierda{
-                        // border: 1px red solid;
                         justify-content: space-around;
                     }
     

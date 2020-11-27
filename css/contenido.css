@@ -326,6 +326,14 @@
   transform: scale(1.05);
   transition: all 0.2s;
 }
+.contenido .seccion-proyectos .proyectos .proyecto3, .contenido .seccion-proyectos .proyectos .proyecto4 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.contenido .seccion-proyectos .proyectos .proyecto3 .info .texto p, .contenido .seccion-proyectos .proyectos .proyecto4 .info .texto p {
+  padding: 10px;
+}
 .contenido .seccion-conocimientos {
   background-color: #e3e3e3;
 }
