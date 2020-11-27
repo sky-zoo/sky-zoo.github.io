@@ -333,6 +333,7 @@
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .info .texto p, .contenido .seccion-proyectos .proyectos .proyecto4 .info .texto p {
   padding: 10px;
+  text-align: center;
 }
 .contenido .seccion-conocimientos {
   background-color: #e3e3e3;
