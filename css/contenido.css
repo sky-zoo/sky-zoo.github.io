@@ -56,12 +56,10 @@
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .imagen1 {
-  /*background-image: url("../proyectos/Captura proyecto1.JPG");*/
   background-image: url("../proyectos/ListaTareas.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .imagen2 {
-  /*background-image: url("../proyectos/Captura proyecto2.JPG");*/
-  /*background-image: url("../proyectos/Pokedex.JPG");*/
+  background-image: url("../proyectos/Pokedex.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .imagen1 {
   border-radius: 5px 0 0 5px;
@@ -97,7 +95,7 @@
 .contenido .seccion-proyectos .proyectos .proyecto1 .info .links {
   display: flex;
   transition: all 0.2s;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-around;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .info .links a {
@@ -106,8 +104,8 @@
   font-size: 20px;
   background-color: #1fa9b5;
   border-radius: 3px;
-  padding: 5px;
-  color: #fff;
+  padding: 10px;
+  color: #e3e3e3;
   transition: all 0.2s;
 }
 .contenido .seccion-proyectos .proyectos .proyecto1 .info .links a:hover {
@@ -131,7 +129,7 @@
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 .imagen1 {
-  /*background-image: url("../proyectos/Captura proyecto1.JPG");*/
+  background-image: url("../proyectos/ListaTareas.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 .imagen2 {
   background-image: url("../proyectos/Pokedex.JPG");
@@ -170,7 +168,7 @@
 .contenido .seccion-proyectos .proyectos .proyecto2 .info .links {
   display: flex;
   transition: all 0.2s;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-around;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 .info .links a {
@@ -179,8 +177,8 @@
   font-size: 20px;
   background-color: #1fa9b5;
   border-radius: 3px;
-  padding: 5px;
-  color: #fff;
+  padding: 10px;
+  color: #e3e3e3;
   transition: all 0.2s;
 }
 .contenido .seccion-proyectos .proyectos .proyecto2 .info .links a:hover {
@@ -204,10 +202,10 @@
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .imagen1 {
-  background-image: url("../proyectos/Captura proyecto1.JPG");
+  background-image: url("../proyectos/ListaTareas.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .imagen2 {
-  background-image: url("../proyectos/Captura proyecto2.JPG");
+  background-image: url("../proyectos/Pokedex.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .imagen3 {
   border-radius: 5px 0 0 5px;
@@ -243,7 +241,7 @@
 .contenido .seccion-proyectos .proyectos .proyecto3 .info .links {
   display: flex;
   transition: all 0.2s;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-around;
 }
 .contenido .seccion-proyectos .proyectos .proyecto3 .info .links a {
@@ -252,7 +250,7 @@
   font-size: 20px;
   background-color: #1fa9b5;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   color: #e3e3e3;
   transition: all 0.2s;
 }
@@ -277,10 +275,10 @@
   background-color: #3e4756;
 }
 .contenido .seccion-proyectos .proyectos .proyecto4 .imagen1 {
-  background-image: url("../proyectos/Captura proyecto1.JPG");
+  background-image: url("../proyectos/ListaTareas.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto4 .imagen2 {
-  background-image: url("../proyectos/Captura proyecto2.JPG");
+  background-image: url("../proyectos/Pokedex.JPG");
 }
 .contenido .seccion-proyectos .proyectos .proyecto4 .imagen4 {
   border-radius: 5px 0 0 5px;
@@ -316,7 +314,7 @@
 .contenido .seccion-proyectos .proyectos .proyecto4 .info .links {
   display: flex;
   transition: all 0.2s;
-  padding: 5px;
+  padding: 10px;
   justify-content: space-around;
 }
 .contenido .seccion-proyectos .proyectos .proyecto4 .info .links a {
@@ -325,7 +323,7 @@
   font-size: 20px;
   background-color: #1fa9b5;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   color: #e3e3e3;
   transition: all 0.2s;
 }
